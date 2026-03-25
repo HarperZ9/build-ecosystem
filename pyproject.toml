@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quanta-ecosystem"
+version = "1.0.0"
+description = "Complete Quanta ecosystem — color science, trading, forecasting, and display calibration"
+readme = "README.md"
+license = {text = "Proprietary"}
+authors = [
+    { name = "Zain Dana Harper" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "quanta-color>=1.0.0",
+    "quanta-finance>=1.0.0",
+    "quanta-oracle>=1.0.0",
+    "quanta-engine>=1.0.0",
+    "calibrate-pro>=1.0.0",
+    "quanta-ui>=1.0.0",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/HarperZ9/quanta-ecosystem"
+Repository = "https://github.com/HarperZ9/quanta-ecosystem"
+Issues = "https://github.com/HarperZ9/quanta-ecosystem/issues"
+
+[project.optional-dependencies]
+gui = [
+    "quanta-color[gui]",
+    "quanta-finance[gui]",
+    "quanta-oracle[gui]",
+    "quanta-engine[gui]",
+    "calibrate-pro[gui]",
+]
+all = [
+    "quanta-color[all]",
+    "quanta-finance[all]",
+    "quanta-oracle[all]",
+    "quanta-engine[all]",
+    "calibrate-pro[all]",
+]
+
+[tool.setuptools.packages.find]
+include = ["quanta_ecosystem*"]
