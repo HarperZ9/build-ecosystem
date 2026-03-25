@@ -52,3 +52,6 @@ all = [
 
 [tool.setuptools.packages.find]
 include = ["quanta_ecosystem*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
