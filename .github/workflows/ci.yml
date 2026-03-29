@@ -1,10 +1,26 @@
 name: CI
+
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install ruff
+        run: pip install ruff
+      - name: Lint
+        run: ruff check .
+      - name: Format check
+        run: ruff format --check .
+
   test:
     runs-on: ${{ matrix.os }}
     strategy:
@@ -16,5 +32,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install -e ".[all]"
-      - run: pytest tests/ -v
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/HarperZ9/quanta-color.git
+          pip install git+https://github.com/HarperZ9/quanta-finance.git
+          pip install git+https://github.com/HarperZ9/quanta-oracle.git
+          pip install git+https://github.com/HarperZ9/quanta-engine.git
+          pip install git+https://github.com/HarperZ9/calibrate-pro.git
+          pip install git+https://github.com/HarperZ9/quanta-ui.git
+          pip install -e ".[all]"
+          pip install pytest
+      - name: Run tests
+        run: pytest tests/ -v
