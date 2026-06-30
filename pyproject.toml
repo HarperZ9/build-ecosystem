@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "quanta-ecosystem"
+name = "build-ecosystem"
 version = "1.0.0"
-description = "Complete Quanta ecosystem — color science, trading, forecasting, and display calibration"
+description = "Complete Build ecosystem — color science, trading, forecasting, and display calibration"
 readme = "README.md"
 license = {text = "Proprietary"}
 authors = [
@@ -13,12 +13,12 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "quanta-color>=1.0.0",
-    "quanta-finance>=1.0.0",
-    "quanta-oracle>=1.0.0",
-    "quanta-engine>=1.0.0",
+    "build-color>=1.0.0",
+    "build-finance>=1.0.0",
+    "build-oracle>=1.0.0",
+    "build-engine>=1.0.0",
     "calibrate-pro>=1.0.0",
-    "quanta-ui>=1.0.0",
+    "build-ui>=1.0.0",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -30,28 +30,28 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/HarperZ9/quanta-ecosystem"
-Repository = "https://github.com/HarperZ9/quanta-ecosystem"
-Issues = "https://github.com/HarperZ9/quanta-ecosystem/issues"
+Homepage = "https://github.com/HarperZ9/build-ecosystem"
+Repository = "https://github.com/HarperZ9/build-ecosystem"
+Issues = "https://github.com/HarperZ9/build-ecosystem/issues"
 
 [project.optional-dependencies]
 gui = [
-    "quanta-color[gui]",
-    "quanta-finance[gui]",
-    "quanta-oracle[gui]",
-    "quanta-engine[gui]",
+    "build-color[gui]",
+    "build-finance[gui]",
+    "build-oracle[gui]",
+    "build-engine[gui]",
     "calibrate-pro[gui]",
 ]
 all = [
-    "quanta-color[all]",
-    "quanta-finance[all]",
-    "quanta-oracle[all]",
-    "quanta-engine[all]",
+    "build-color[all]",
+    "build-finance[all]",
+    "build-oracle[all]",
+    "build-engine[all]",
     "calibrate-pro[all]",
 ]
 
 [tool.setuptools.packages.find]
-include = ["quanta_ecosystem*"]
+include = ["build_ecosystem*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
