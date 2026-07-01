@@ -9,4 +9,4 @@ Installs all Build tools:
     build-engine   - Adaptive prediction engine
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
