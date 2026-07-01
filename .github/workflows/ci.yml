@@ -14,12 +14,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install ruff
-        run: pip install ruff
+      - name: Install ruff + mypy
+        run: pip install ruff mypy
       - name: Lint
         run: ruff check .
       - name: Format check
         run: ruff format --check .
+      - name: Type check (mypy)
+        run: mypy
 
   validate:
     runs-on: ubuntu-latest

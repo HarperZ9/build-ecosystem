@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build Ecosystem mark">
+  <defs>
+    <linearGradient id="be-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1030"/>
+      <stop offset="1" stop-color="#0c0a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="url(#be-bg)"/>
+  <!-- constellation: hub node (the ecosystem) with member nodes -->
+  <line x1="64" y1="64" x2="64" y2="26" stroke="#4636e8" stroke-width="2.5" opacity="0.85"/>
+  <line x1="64" y1="64" x2="98" y2="46" stroke="#4636e8" stroke-width="2.5" opacity="0.85"/>
+  <line x1="64" y1="64" x2="102" y2="88" stroke="#4636e8" stroke-width="2.5" opacity="0.85"/>
+  <line x1="64" y1="64" x2="64" y2="102" stroke="#4636e8" stroke-width="2.5" opacity="0.85"/>
+  <line x1="64" y1="64" x2="26" y2="88" stroke="#4636e8" stroke-width="2.5" opacity="0.85"/>
+  <line x1="64" y1="64" x2="30" y2="46" stroke="#4636e8" stroke-width="2.5" opacity="0.85"/>
+  <!-- member nodes -->
+  <circle cx="64" cy="26" r="7" fill="#ff4d6d"/>
+  <circle cx="98" cy="46" r="7" fill="#38d39f"/>
+  <circle cx="102" cy="88" r="7" fill="#4d8bff"/>
+  <circle cx="64" cy="102" r="7" fill="#ffb84d"/>
+  <circle cx="26" cy="88" r="7" fill="#a15bff"/>
+  <circle cx="30" cy="46" r="7" fill="#38d3d3"/>
+  <!-- hub -->
+  <circle cx="64" cy="64" r="12" fill="#ffffff"/>
+</svg>
