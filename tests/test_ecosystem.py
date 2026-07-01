@@ -14,7 +14,7 @@ class TestPackageImports:
 
     def test_build_color(self):
         build_color = pytest.importorskip("build_color")
-        assert build_color.__version__ == "1.0.0"
+        assert build_color.__version__ == "1.0.2"
 
     def test_build_finance(self):
         indicators = pytest.importorskip("build_finance.indicators")
@@ -61,4 +61,4 @@ class TestEcosystemMeta:
 
     def test_version(self):
         build_ecosystem = pytest.importorskip("build_ecosystem")
-        assert build_ecosystem.__version__ == "1.0.0"
+        assert build_ecosystem.__version__ == "1.0.1"

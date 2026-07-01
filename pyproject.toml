@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "build-ecosystem"
-version = "1.0.0"
+version = "1.0.1"
 description = "Complete Build ecosystem — color science, trading, forecasting, and display calibration"
 readme = "README.md"
 license = { text = "FSL-1.1-MIT" }
