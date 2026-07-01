@@ -1,0 +1,27 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build Ecosystem, the full Build family in one install">
+  <defs>
+    <linearGradient id="hero-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#160c28"/>
+      <stop offset="1" stop-color="#0a0816"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="url(#hero-bg)"/>
+  <!-- constellation motif -->
+  <g transform="translate(980,180)" opacity="0.92">
+    <line x1="0" y1="0" x2="0" y2="-92" stroke="#4636e8" stroke-width="3"/>
+    <line x1="0" y1="0" x2="80" y2="-40" stroke="#4636e8" stroke-width="3"/>
+    <line x1="0" y1="0" x2="88" y2="50" stroke="#4636e8" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="92" stroke="#4636e8" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-88" y2="50" stroke="#4636e8" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-80" y2="-40" stroke="#4636e8" stroke-width="3"/>
+    <circle cx="0" cy="-92" r="10" fill="#ff4d6d"/>
+    <circle cx="80" cy="-40" r="10" fill="#38d39f"/>
+    <circle cx="88" cy="50" r="10" fill="#4d8bff"/>
+    <circle cx="0" cy="92" r="10" fill="#ffb84d"/>
+    <circle cx="-88" cy="50" r="10" fill="#a15bff"/>
+    <circle cx="-80" cy="-40" r="10" fill="#38d3d3"/>
+    <circle cx="0" cy="0" r="16" fill="#ffffff"/>
+  </g>
+  <text x="80" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#ffffff">Build Ecosystem</text>
+  <text x="82" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#b8b0d8">The full Build family in one install — color, finance, oracle, engine, calibrate, ui.</text>
+</svg>
