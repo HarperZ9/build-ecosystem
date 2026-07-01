@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/brand/build-ecosystem-hero.png" alt="Build Ecosystem: Ecosystem Meta-Package">
+</p>
+
 # Build Ecosystem
 
 Complete Build ecosystem meta-package. Installs all five Build packages in one command: color science, algorithmic trading, time series forecasting, self-improving prediction engine, and display calibration.
