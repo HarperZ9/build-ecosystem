@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/brand/build-ecosystem-hero.png" alt="Build Ecosystem, the full Build family in one install">
+  <img src=".github/assets/zentropy-banner.png" alt="Build Ecosystem, the full Build family in one install">
 </p>
 <!-- Project mark: docs/brand/build-ecosystem-mark.svg -->
 
@@ -39,3 +39,7 @@ pip install build-ecosystem[gui]
 ## Repository
 
 [https://github.com/HarperZ9/build-ecosystem](https://github.com/HarperZ9/build-ecosystem)
+
+---
+
+**[Zentropy Labs](https://github.com/ZentropyLabs-ai)** · order out of entropy. An independent lab building evidence-first tools that leave a re-checkable artifact behind. Built by Zain Dana Harper in Seattle. The full workbench is at [Project Telos](https://harperz9.github.io).
