@@ -10,3 +10,6 @@ dist/
 .pytest_cache/
 .claude/settings.local.json
 CLAUDE.local.md
+
+# The committed template must survive the .env.* rule above (global standard)
+!.env.example
