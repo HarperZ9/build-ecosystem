@@ -14,19 +14,20 @@
 ![python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 [![license: fair-source](https://img.shields.io/badge/license-fair--source-blue.svg)](LICENSE)
 
-Complete Build ecosystem meta-package. Installs all five Build packages in one command: color science, algorithmic trading, time series forecasting, self-improving prediction engine, and display calibration.
+Complete Build ecosystem meta-package. It is the version-pinning hub for the Build family: color science, algorithmic trading, time-series forecasting, self-improving prediction, display calibration, and the shared UI layer.
 
 ## Installation
 
-```bash
-pip install build-ecosystem
-```
-
-With GUI support:
+`build-ecosystem` is not published on PyPI yet, and one member dependency (`build-finance`) is also not available from PyPI. Until those registry entries exist, install this repository from source for metadata and smoke checks:
 
 ```bash
-pip install build-ecosystem[gui]
+git clone https://github.com/HarperZ9/build-ecosystem.git
+cd build-ecosystem
+python -m pip install -e ".[test]" --no-deps
+python -c "import build_ecosystem; print(build_ecosystem.__version__)"
 ```
+
+The published member packages currently available on PyPI are `build-color`, `build-oracle`, `build-engine`, `calibrate-pro`, and `build-ui`. Install `build-finance` from its owning repository until it has a registry release. Do not use `pip install build-ecosystem` until the PyPI package exists.
 
 ## Included Packages
 
