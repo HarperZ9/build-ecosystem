@@ -1,22 +1,19 @@
 # Build Ecosystem — Usage Guide
 
-Build Ecosystem installs the full Build family in one command. It has no CLI
-and no API of its own beyond a version string.
+Build Ecosystem is the meta-package for the Build family. It has no CLI and no API of its own beyond a version string.
 
 ## Install
 
+The `build-ecosystem` distribution is not on PyPI yet. Use a source checkout for development and smoke checks:
+
 ```bash
-# Everything, core dependencies only
-pip install build-ecosystem
-
-# Everything, including each member's GUI extra
-pip install "build-ecosystem[gui]"
-
-# Everything, including each member's full optional extras
-pip install "build-ecosystem[all]"
+git clone https://github.com/HarperZ9/build-ecosystem.git
+cd build-ecosystem
+python -m pip install -e ".[test]" --no-deps
+python -c "import build_ecosystem; print(build_ecosystem.__version__)"
 ```
 
-Requires Python 3.10+.
+Requires Python 3.10+. The full one-command registry install is held until `build-ecosystem` and every required member package are published. At this revision, `build-finance` is the missing required PyPI dependency; install it from its owning repository for local ecosystem testing.
 
 ## What gets installed
 
@@ -43,6 +40,12 @@ print(build_color.__version__)
 ```
 
 See each member's own README and USAGE.md for its CLI and Python API.
+
+## Troubleshooting
+
+- `No matching distribution found for build-ecosystem`: expected until the PyPI project is published. Use the source checkout path above.
+- `No matching distribution found for build-finance`: expected in a full dependency install at this revision. Install `build-finance` from its repository or run this meta-package with `--no-deps` for metadata checks.
+- The test suite uses `pytest.importorskip` for member packages, so an isolated checkout can still verify the meta-package version without installing the full family.
 
 ## See also
 
