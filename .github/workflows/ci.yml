@@ -46,3 +46,9 @@ jobs:
           assert len(deps) >= 5, 'Expected at least 5 ecosystem deps'
           print('pyproject.toml valid')
           "
+  art-receipts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify art receipt digests
+        run: python3 scripts/check_art_receipts.py
