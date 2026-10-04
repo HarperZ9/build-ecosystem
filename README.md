@@ -1,18 +1,22 @@
-<p align="center">
-  <img src=".github/assets/banner.png" alt="Build Ecosystem, the full Build family in one install">
-</p>
-<!-- Project mark: docs/brand/build-ecosystem-mark.svg -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HarperZ9/build-ecosystem/main/docs/art/hero-dark.svg">
+  <img src="https://raw.githubusercontent.com/HarperZ9/build-ecosystem/main/docs/art/hero-light.svg" alt="build-ecosystem: One install for the Build family: color, trading, forecasting, display. Clusters of small nodes, named color, finance, oracle, engine and calibrate, are wired to their neighbours and bundled through a bright core." width="100%">
+</picture>
 
-# Build Ecosystem
+# build-ecosystem
 
-> One-command meta-package for the full Build family: color science, algorithmic trading, time-series forecasting, self-improving prediction, display calibration, and the shared UI layer.
+One install for the Build family: color, trading, forecasting, display.
+
+```
+git clone https://github.com/HarperZ9/build-ecosystem.git
+```
+
+[![version: 1.0.0](https://img.shields.io/badge/version-1.0.0-e6e1d6?style=flat-square&labelColor=1a1712)](https://github.com/HarperZ9/build-ecosystem/releases/latest)
+[![CI](https://github.com/HarperZ9/build-ecosystem/actions/workflows/ci.yml/badge.svg)](https://github.com/HarperZ9/build-ecosystem/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-FSL--1.1--MIT-e6e1d6?style=flat-square&labelColor=1a1712)](https://github.com/HarperZ9/build-ecosystem/blob/main/LICENSE)
+![python 3.10+](https://img.shields.io/badge/python-3.10%2B-e6e1d6?style=flat-square&labelColor=1a1712)
 
 [Project Telos](https://harperz9.github.io) | [gather](https://github.com/HarperZ9/gather) | [crucible](https://github.com/HarperZ9/crucible) | [index](https://github.com/HarperZ9/index) | [forum](https://github.com/HarperZ9/forum) | [telos](https://github.com/HarperZ9/telos) | [emet](https://github.com/HarperZ9/emet) | [buildlang](https://github.com/HarperZ9/buildlang)
-
-[![CI](https://github.com/HarperZ9/build-ecosystem/actions/workflows/ci.yml/badge.svg)](https://github.com/HarperZ9/build-ecosystem/actions/workflows/ci.yml)
-![version: 1.0.1](https://img.shields.io/badge/version-1.0.1-informational.svg)
-![python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-[![license: fair-source](https://img.shields.io/badge/license-fair--source-blue.svg)](LICENSE)
 
 Complete Build ecosystem meta-package. It is the version-pinning hub for the Build family: color science, algorithmic trading, time-series forecasting, self-improving prediction, display calibration, and the shared UI layer.
 
